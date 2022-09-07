@@ -1,0 +1,19 @@
+{
+  "name": "com.unity.services.deployment.api",
+  "displayName": "Deployment API",
+  "version": "1.0.0-pre.3",
+  "unity": "2021.3",
+  "description": "This package contains the API designed to allow for implementing Deployment functionality.",
+  "dependencies": {},
+  "relatedPackages": {
+    "com.unity.services.deployment.api.tests": "1.0.0-pre.3"
+  },
+  "upmCi": {
+    "footprint": "5e7b26991f9010b7be64a62a55fe8a7d768b020d"
+  },
+  "repository": {
+    "url": "https://github.cds.internal.unity3d.com/unity/operate-services-sdk.git",
+    "type": "git",
+    "revision": "3f42f9fdc2ffcf8b08eb25629f8d83841926275a"
+  }
+}
