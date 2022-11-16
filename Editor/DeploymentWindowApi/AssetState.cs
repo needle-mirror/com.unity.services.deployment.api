@@ -37,12 +37,12 @@ namespace Unity.Services.DeploymentApi.Editor
         /// </summary>
         /// <param name="description">Status description.</param>
         /// <param name="detail">Detail.</param>
-        /// <param name="type">Deployment status type.</param>
-        public AssetState(string description, string detail, SeverityLevel type)
+        /// <param name="level">Deployment status type.</param>
+        public AssetState(string description, string detail, SeverityLevel level)
         {
             m_Description = description;
             m_Detail = detail;
-            m_SeverityLevel = type;
+            m_SeverityLevel = level;
         }
     }
 }

@@ -5,8 +5,10 @@ namespace Unity.Services.DeploymentApi.Editor
     /// </summary>
     enum SeverityLevel
     {
+        None,
         Info,
         Warning,
-        Error
+        Error,
+        Success
     }
 }

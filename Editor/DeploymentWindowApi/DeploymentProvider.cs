@@ -32,6 +32,11 @@ namespace Unity.Services.DeploymentApi.Editor
         /// </summary>
         public virtual Command OpenCommand => null;
 
+        /// <summary>
+        /// Command that triggers the syncing with remote behaviour on an item.
+        /// </summary>
+        public virtual Command SyncItemsWithRemoteCommand => null;
+
         protected DeploymentProvider(ObservableCollection<IDeploymentItem> deploymentItems = null, ObservableCollection<Command> commands = null)
         {
             DeploymentItems = deploymentItems ?? new ObservableCollection<IDeploymentItem>();
