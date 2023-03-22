@@ -1,6 +1,9 @@
 namespace Unity.Services.DeploymentApi.Editor
 {
-    interface ITypedItem
+    /// <summary>
+    /// Interface to provide the type of a deployment item.
+    /// </summary>
+    public interface ITypedItem
     {
         /// <summary>
         /// Represents the type of the deployment item.

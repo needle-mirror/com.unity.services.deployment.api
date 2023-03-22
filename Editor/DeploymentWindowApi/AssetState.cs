@@ -9,15 +9,15 @@ namespace Unity.Services.DeploymentApi.Editor
     /// For status relative to the 'live' counterpart, use DeploymentStatus
     /// </summary>
     [Serializable]
-    struct AssetState
+    public struct AssetState
     {
-        //n.b.: Do not mark as readonly. Required for reload domain persistence
+        //n.b.: Do not mark as readonly. Required for reload domain persistence.
         string m_Description;
         string m_Detail;
         SeverityLevel m_SeverityLevel;
 
         /// <summary>
-        /// Description of the state
+        /// Description of the state.
         /// </summary>
         public string Description => m_Description;
 
@@ -28,12 +28,12 @@ namespace Unity.Services.DeploymentApi.Editor
         public string Detail => m_Detail;
 
         /// <summary>
-        /// The level associated with this state
+        /// The level associated with this state.
         /// </summary>
         public SeverityLevel Level => m_SeverityLevel;
 
         /// <summary>
-        /// Create a DeploymentItem state
+        /// Constructor of the AssetState.
         /// </summary>
         /// <param name="description">Status description.</param>
         /// <param name="detail">Detail.</param>

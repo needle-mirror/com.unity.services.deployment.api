@@ -9,7 +9,7 @@ namespace Unity.Services.DeploymentApi.Editor
     /// or other internal validations, use AssetState for that purpose.
     /// </summary>
     [Serializable]
-    struct DeploymentStatus
+    public struct DeploymentStatus
     {
         //n.b.: Do not mark as readonly. Required for reload domain persistence
         string m_Message;
@@ -39,12 +39,12 @@ namespace Unity.Services.DeploymentApi.Editor
         public string Message => m_Message;
 
         /// <summary>
-        /// Details associated with a deployment result
+        /// Details associated with a deployment result.
         /// </summary>
         public string MessageDetail => m_MessageDetail;
 
         /// <summary>
-        /// Severity of the deployment message level
+        /// Severity of the deployment message level.
         /// </summary>
         public SeverityLevel MessageSeverity => m_MessageSeverity;
 
