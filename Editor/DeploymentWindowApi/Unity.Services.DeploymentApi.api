@@ -9,7 +9,8 @@ namespace Unity.Services.DeploymentApi.Editor
         public string Detail { get; }
         public SeverityLevel Level { get; }
         public string Type { get; }
-        public AssetState(string description, string detail, SeverityLevel level, string type = @"") {}
+        public AssetState(string description, string detail, SeverityLevel level) {}
+        public AssetState(string description, string detail, SeverityLevel level, string type) {}
     }
 
     public abstract class Command
@@ -114,7 +115,7 @@ namespace Unity.Services.DeploymentApi.Editor
         public static DeploymentStatus GetFailedToRead(System.Exception e, string path);
         public static DeploymentStatus GetFailedToSerialize(System.Exception e, string path);
         public static DeploymentStatus GetFailedToWrite(System.Exception e, string path);
-        public static DeploymentStatus GetFetched(string detail);
+        public static DeploymentStatus GetFetched(string details);
         public static DeploymentStatus GetFetching(string details);
         public static DeploymentStatus GetPartialDeploy(string details);
         public static DeploymentStatus GetPartialFetch(string details);
